@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Store Sentiment Analysis</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        header h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .visualization-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .chart {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .chart img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .description {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .description h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>App Store Sentiment Analysis</h1>
+            <p>Visualizing user review sentiments across top applications</p>
+        </header>
+
+        <div class="visualization-container">
+            <div class="chart">
+                <img src="sentiment_distribution.png" alt="Sentiment Distribution Visualization">
+            </div>
+        </div>
+
+        <div class="description">
+            <h2>Analysis Overview</h2>
+            <p>This visualization shows the distribution of user review sentiments across different rating groups for the top 5 applications based on review volume.</p>
+            <p>Key insights include:</p>
+            <ul>
+                <li>Percentage of positive, neutral, and negative reviews in each rating group</li>
+                <li>How sentiment distribution varies between different rating ranges (1-2 stars, 3-4 stars, 4-5 stars)</li>
+                <li>Comparative analysis across the top 5 most reviewed applications</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
